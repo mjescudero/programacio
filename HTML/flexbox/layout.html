@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!--tipus de caracters que utilitza la meva pàgina, si no ho reconeix haurem de posar caràters especials a cada accent-->
+    
+        <meta name="author" content="MJ Escudero">
+        <meta name="description" content="primera pàgina">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercici M03_01</title>
+        <style>
+            .bloc1{
+    background: black;
+    padding: 5px;
+    margin: 10px;
+
+}
+.caixa11{
+    background: rgb(70, 70, 82);
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.item1{
+    background: rgb(231, 94, 94);
+    padding: 5px;  
+    margin: 5px;
+    flex-grow: 1;
+      
+}
+.item_gran{
+    flex-grow: 4;
+}
+
+.caixa12{
+    border: 10px solid rgb(255, 115, 0);
+    background: rgb(238, 238, 138);
+    padding: 5px;
+    margin: 5px;
+}
+
+.bloc2{
+    background: black;
+    padding: 5px;
+    margin: 10px;
+    display:flex;
+    justify-content:space-between;
+                    
+}
+.caixa21{
+    background: rgb(30, 85, 110);
+    padding: 5px;
+    margin: 5px;
+    flex-grow: 2;
+    display:flex;
+    flex-wrap: wrap;
+   
+}
+.item3{
+    background: rgb(25, 131, 201);
+    margin: 5px;
+    padding: 5px;
+    flex-grow: 1;
+    flex-basis: 40%;
+   
+}
+.item3_gran{
+    background: rgb(86, 176, 236);
+    margin: 5px;
+    padding: 5px;
+    flex-grow: 2;
+    flex-basis: 50%;
+    
+}
+.caixa22{
+    background: rgb(219, 81, 81);
+    padding: 5px;
+    margin: 5px;
+    align-items: flex-start;
+    flex-grow: 1;
+   
+}
+.item4{
+    background: rgb(238, 238, 138);
+    padding: 5px;
+    margin: 5px;
+}
+
+.bloc3{
+    border: 10px solid black;
+    background: rgb(238, 238, 138);
+    padding: 5px;
+    margin: 10px;
+}
+        </style>
+       
+    </head>
+    <body>
+        <div class="bloc1">
+            <div class="caixa11">
+                <div class="item1"> </div>
+                <div class="item1 item_gran"> </div>
+                <div class="item1"> </div>
+            </div>
+            <div class="caixa12">   </div>
+        </div>
+        <div class="bloc2">  
+            <div class= "caixa21" > 
+                <div class="item3"></div>
+                <div class="item3"></div>
+                <div class="item3"></div>
+                <div class="item3"></div>
+                <div class="item3_gran"></div>
+            </div>
+            <div class="caixa22">
+                <div class="item4"></div>
+                <div class="item4"></div>
+            </div> 
+        </div>
+        <div class="bloc3">   </div>
+
+
+    </body>
+</html>

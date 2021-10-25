@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function allowDrop(ev) {
+            ev.preventDefault();}
+
+            function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);}
+
+            function drop(ev) {
+             ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+            }
+        
+        </script>      
+        
+    </head>
+    <body>
+        <header>
+            <h1> Most important heading</h1>
+            <h3> Less important headig</h3>
+        </header>
+        <audio controls>
+            <source src="audioFile.mp3" type="audio/mpeg">
+            <source src="audioFile.ogg" type="audio/ogg">
+            Audio element no supported by your browser
+        </audio>
+        <br>
+        <audio controls autoplay loop>
+            <source src="C:\Users\MJ\Documents\documents_empresa_TPZ\Mis documentos\Mi música\Eric Clapton - Ballads\Wonderful Tonight (Live).mp3" type="audio/mpeg">
+            Audio element no supported by your browser
+        </audio>
+        <br>
+        <video controls autoplay loop>
+            <source src=file.mp4 type=video/mp4>
+
+        </video>
+        <br>
+        <div id="box" ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+            style="border:1px solid black; 
+            width:200px; height:200px">
+        </div>
+        <br>
+        <img id="image" 
+        src="C:\Users\MJ\Pictures\P1000213.jpg" draggable="true" ondragstart="drag(event)"
+        width="25%" height="25%">
+        <br/>
+        <svg width="1000" height="1000">
+            <circle cx="80" cy="50" r="50" fill="green"/>
+        </svg>
+        <form>
+            <label> name:</label>
+            <input type="text" name="username" id="user" ><br>
+            <label for="email"> Your email:</label>
+            <input type="email" name="email" placeholder="email@example.com", autofocus>
+        </form>
+    
+
+    </body>
+</html>
+

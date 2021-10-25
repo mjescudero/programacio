@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!--tipus de caracters que utilitza la meva pàgina, si no ho reconeix haurem de posar caràters especials a cada accent-->
+
+    <meta name="author" content="MJ Escudero">
+    <meta name="description" content="primera pàgina">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pàgina WEB curs Angular</title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .flex-item {
+            background: tomato;
+            padding: 5px;
+            width: 200px;
+            height: 150px;
+            margin-top: 10px;
+            line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+        }
+
+        .navigation {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+            list-style: none;
+            margin: 0;
+            background: deepskyblue;
+
+        }
+
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 15px;
+        }
+
+        .navigation a:hover {
+            background: #1565C0;
+        }
+
+        @media all and (max-width: 800px) {
+            .navigation {
+                justify-content: space-around;
+
+            }
+            
+        }
+
+            @media all and (max-width: 600px) {
+                .navigation {
+                    flex-flow: column wrap;
+                    padding: 0px;
+                }
+
+                .navigation a {
+                    padding: 10px;
+                    text-align: center;
+                    border-top: 1px solid rgba(255, 255, 255, 0.3);
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                }
+
+            }
+        
+
+            .wrapper {
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .wrapper>* {
+                padding: 10px;
+                flex: 1 100%;
+            }
+
+            .header {
+                background: tomato;
+            }
+            .footer {
+                background: lightgreen;
+            }
+            .main {
+                text-align: left;
+                background: deepskyblue;
+            }
+            .aside-1 {
+                background: gold;
+            }
+
+            .aside-2 {
+                background: hotpink;
+            }
+            @media all and (min-width: 600px) {
+                .aside { flex: 1 0 0; }
+            }               
+
+            @media all and (min-width: 800px) {
+                .main    { flex: 3 0px; }
+                .aside-1 { order: 1; } 
+                .main    { order: 2; }
+                .aside-2 { order: 3; }
+                .footer  { order: 4; }
+            }
+            body {
+                padding: 2em; 
+                }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- fer un menu de navegacio amb CSS i flexbox-->
+    <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <br>
+
+    <div class="wrapper">
+        <header class="header">Header</header>
+        <article class="main">
+            <p>Pellentes que habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
+                tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
+                semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        </article>
+        <aside class="aside aside-1">Aside 1</aside>
+        <aside class="aside aside-2">Aside 2</aside>
+        <footer class="footer">Footer</footer>
+    </div>
+
+
+    <br>
+    <ul class="flex-container">
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+        <li class="flex-item">4</li>
+        <li class="flex-item">5</li>
+        <li class="flex-item">6</li>
+    </ul>
+
+
+
+
+</body>
+
+
+</html>

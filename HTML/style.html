@@ -1,0 +1,136 @@
+<html>
+   <head>
+      <style>
+         h1{color:red}
+         p.right{text-align: right; color:darkgreen}
+         body {
+            color: rgb(38, 0, 128);
+            font-family:"Helvetica Neue" ;
+            background-color: rgb(243, 177, 234);
+            font-size: larger;
+            }
+         table{
+            border-collapse: separate;
+            border-spacing: 20px 40px;
+         }
+         td.top{vertical-align:top}
+         td.middle{vertical-align:middle}
+         td.bottom{vertical-align:bottom}
+         p{text-indent: 60px;}
+         p.capitalize{text-transform: capitalize;}
+         p.positive{letter-spacing: 4px;}
+         p.negative{letter-spacing: -4px;}
+         p{white-space:nowrap; word-wrap: break-word;}
+         div.border{
+            border: 5px solid green;
+            width: 100%;
+            height: 90px;
+
+         }
+      
+         p.first{
+            border: 5px solid;
+            min-height:100px;
+         }
+         p.second{
+            border: 5px solid;
+            max-width: width 100px;
+         }
+         ol.lower-alphe{
+            list-style-type: lower-roman;
+         }
+         ul.circle{
+            list-style-type: circle;
+         }
+         ul.square{
+            list-style-type: square;
+            list-style-position: inside;
+         }
+         span{display:block;}
+        
+
+     </style>
+   </head>
+   <body>   
+      <h1> <span> la meva web </span></p></h1>
+      <p class="right">
+        This is a text inside the paragraph. 
+      </p>
+
+      <table border="1" cellpadding="2" cellspacing="0" style="height: 150px;">
+         <tr>
+            <td class="top">Top</td>
+            <td class="middle">Middle</td>
+            <td class="bottom">Bottom</td>
+         </tr>
+       </table>
+
+       <p>This is an example of 
+         <strong>text-indent </strong> property. 
+         First line of our text is indented to the right in 60px. 
+         Besides pixels you can also use other measurement units, 
+         like pt, cm, em, etc. 
+      </p>
+      <p>Hola es un exemple</p>
+      <p class="capitalize">
+         The value capitalize transforms the first character in each word to uppercase; 
+         all other characters remain unaffected.
+     </p>
+     <p class="positive ">This paragraph is letter-spaced at 4px.</p>
+     <p class=>This paragraph is letter-spaced at 4px.</p>
+     <p class="positive">This paragraph is word-spaced at 15px.</p>
+      <p class="negative">This paragraph is word-spaced at -5px.</p>
+      <div class="border">The total width of this element is 
+         <strong>100%</strong> and the total height is 
+         <strong>100px</strong> .
+      </div>
+      <p class="first">The <strong>minimum height </strong> of this paragraph is set to 100px.</p>
+      <p class="second">The<strong> maximum width </strong> of this paragraph is set to 100px.</p>
+
+      <ol class="lower-alpha">
+         <li>Red</li>
+         <li>Green</li>
+         <li>Blue</li>
+      </ol>
+      <ul class="circle">
+         <li>Red</li>
+         <li>Green</li>
+         <li>Blue</li>
+      </ul>
+      <ul class="square">
+         <li>Red</li>
+         <li>Green</li>
+         <li>Blue</li>
+      </ul>
+      <table border="1">
+         <tr>
+           <td>Red</td>
+           <td>Green</td>
+         </tr>
+         <tr>
+            <td>Blue</td>
+            <td>Yellow</td>
+         </tr>
+      </table>
+      <span>hola</span>
+      <span>kkkk</span>
+
+      <div id="parent">
+         <p>First paragraph</p>
+         <p>Second paragraph</p>
+         <p>Third paragraph</p>
+         <p>Fourth paragraph</p>
+      </div>
+      <p>You can insert text, images, and other resources using 
+         <strong>:before </strong>pseudo element.
+      </p>
+      <p>You can insert text, images, and other resources using 
+         <strong>:before </strong>pseudo element.
+      </p>
+      <p>You can insert text, images, and other resources using 
+         <strong>:before </strong>pseudo element.
+      </p>
+
+
+   </body>
+</html>

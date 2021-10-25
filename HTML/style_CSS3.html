@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style>
+          div.grad1 {
+            float: left;
+            width: 300px;
+            height: 100px;
+            margin: 4px;
+            color: #fff;
+            /*background-image: linear-gradient(DeepSkyBlue,black);*/
+            background-image: linear-gradient(red 20%, green 20%, pink 80%,blue 80%);
+            
+            
+            }
+	     div.grad2 {
+            float: left;
+            width: 300px;
+            height: 100px;
+            margin: 4px;
+            color: #fff;
+            background-image: linear-gradient(red, green, pink,blue)
+            }  
+         div.grad3 {
+            float: left;
+            width: 300px;
+            height: 100px;
+            margin: 4px;
+            color: #fff;
+            background-image: linear-gradient( red,yellow)
+            } 
+            div.trans{
+                width: 50px;
+                height: 30px;
+                background: red;
+                transition: width 5s;
+            } 
+            div:hover{width: 300px;}
+            div.move{
+                width: 50px;
+                height: 30px;
+                position: absolute;
+                background: rgb(76, 0, 255);
+                transform: translate(100px,opx);
+                
+            } 
+            div.color {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                animation-name: colorchange;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                
+            }
+            @keyframes colorchange{
+                0%{background-color: red;}
+                50% {background-color: green;}
+                100% {background-color:blue}
+            }
+           
+        </style>
+    </head>
+    <body>
+        <h1>Hola</h1>
+        <div class="trans"> hhhhhh</div><br>
+        <div class="move"> move</div> <br>
+        <div class="color"></div> <br>
+                    
+        <div class="grad1"></div> 
+	    <div class="grad2"></div>
+        <div class="grad3"></div>
+    </body>
+</html>
+     
+ 
